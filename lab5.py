@@ -151,7 +151,13 @@ for i in range(15):
 
 print("Критерій Кохрена")
 while True:
-    Gp = max(dcouple) / sum(dcouple)
+    o=0
+    o=o+1
+    if o>100:
+        print("Текст помилки")
+        break
+    else:
+     Gp = max(dcouple) / sum(dcouple)
     q = 0.05
     f1 = m - 1
     f2 = N = 15
